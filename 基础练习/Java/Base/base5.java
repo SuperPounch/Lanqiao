@@ -7,21 +7,20 @@ public class base5 {
         Scanner inScanner = new Scanner(System.in);
         int count = 0, num;
         count = inScanner.nextInt();
-        int[] list = new int[count + 1];
-        for (int i = 1; i <= count; i++) {
+        int[] list = new int[count];
+        for (int i = 0; i < count; i++) {
             list[i] = inScanner.nextInt();
         }
         num = inScanner.nextInt();
         inScanner.close();
-        for (int i = 1; i <= list.length; i++) {
+        for (int i = 0; i < list.length; i++) {
             if (num == list[i]) {
-                System.out.println(i);
+                System.out.println(i+1);
                 break;
             }
             if (i == count) {
                 System.out.println(-1);
             }
         }
-
     }
 }
